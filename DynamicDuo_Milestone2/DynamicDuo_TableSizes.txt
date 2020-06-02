@@ -1,0 +1,7 @@
+Users - 192999
+Business - 11481
+friend - 1052706
+review - 416479
+checkins - 67407
+Hours - 55502
+Categories - 33619

@@ -1,0 +1,16 @@
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\bin\Debug\Milestone1.exe.config
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\bin\Debug\Milestone1.exe
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\bin\Debug\Milestone1.pdb
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\Milestone1.csprojResolveAssemblyReference.cache
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\MainWindow.g.cs
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\App.g.cs
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\Milestone1_MarkupCompile.cache
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\Milestone1_MarkupCompile.lref
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\MainWindow.baml
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\Milestone1.g.resources
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\Milestone1.Properties.Resources.resources
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\Milestone1.csproj.GenerateResource.Cache
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\Milestone1.exe
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\obj\Debug\Milestone1.pdb
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\bin\Debug\Npgsql.dll
+c:\users\elijah\documents\visual studio 2015\Projects\Milestone1\Milestone1\bin\Debug\Npgsql.xml

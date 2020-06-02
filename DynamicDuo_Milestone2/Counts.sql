@@ -1,0 +1,7 @@
+--select count(*) from Users;
+--select count(*) from Business;
+--select count(*) from friend;
+--select count(*) from Review;
+--select count(*) from checkins;
+--select count(*) from Hours;
+--select count(*) from Categories;

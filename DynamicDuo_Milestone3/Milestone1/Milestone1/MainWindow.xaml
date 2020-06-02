@@ -1,0 +1,98 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Milestone1"
+        xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" x:Class="Milestone1.MainWindow"
+        mc:Ignorable="d"
+        Title="Milestone1" Height="800" Width="1200">
+    <Grid>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="770" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="1194">
+            <TabItem Header="User Information">
+                <Grid Background="#bac1d6" Margin="0,-2,0,1.6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="label6" Content="Set Current User" HorizontalAlignment="Left" Height="42" Margin="10,10,0,0" VerticalAlignment="Top" Width="122" FontSize="14"/>
+                    <TextBox x:Name="UsernameBox" HorizontalAlignment="Left" Height="35" Margin="10,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="255" TextChanged="UsernameBox_TextChanged" FontSize="14"/>
+                    <ListBox x:Name="UseridBox" HorizontalAlignment="Left" Height="100" Margin="7,88,0,0" VerticalAlignment="Top" Width="261" SelectionChanged="UseridBox_SelectionChanged"/>
+                    <Label x:Name="label7" Content="User Information" HorizontalAlignment="Left" Height="43" Margin="7,188,0,0" VerticalAlignment="Top" Width="125" FontSize="14"/>
+                    <Label x:Name="label8" Content="Name:" HorizontalAlignment="Left" Height="30" Margin="10,211,0,0" VerticalAlignment="Top" Width="58" FontSize="14"/>
+                    <TextBox x:Name="UIDnameBox" HorizontalAlignment="Left" Height="25" Margin="68,211,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="197" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label9" Content="Stars:" HorizontalAlignment="Left" Height="56" Margin="10,241,0,0" VerticalAlignment="Top" Width="61" FontSize="14"/>
+                    <TextBox x:Name="UIDstarBox" HorizontalAlignment="Left" Height="24" Margin="68,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="67" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label10" Content="Fans:" HorizontalAlignment="Left" Height="29" Margin="156,241,0,0" VerticalAlignment="Top" Width="61" FontSize="14"/>
+                    <TextBox x:Name="UIDfansBox" HorizontalAlignment="Left" Height="24" Margin="198,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="67" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label11" Content="Yelping Since:" HorizontalAlignment="Left" Height="32" Margin="10,265,0,0" VerticalAlignment="Top" Width="96" FontSize="14"/>
+                    <TextBox x:Name="UIDdateBox" HorizontalAlignment="Left" Height="22" Margin="106,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label12" Content="Votes:" HorizontalAlignment="Left" Height="27" Margin="7,297,0,0" VerticalAlignment="Top" Width="61" FontSize="14"/>
+                    <Label x:Name="label13" Content="funny:" HorizontalAlignment="Left" Height="36" Margin="7,329,0,0" VerticalAlignment="Top" Width="58" FontSize="14"/>
+                    <TextBox x:Name="UIDfunnyBox" HorizontalAlignment="Left" Height="26" Margin="57,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label14" Content="cool:" HorizontalAlignment="Left" Height="31" Margin="87,329,0,0" VerticalAlignment="Top" Width="66" FontSize="14"/>
+                    <TextBox x:Name="UIDcoolBox" HorizontalAlignment="Left" Height="26" Margin="132,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="40" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label15" Content="useful:" Height="31" Margin="177,329,955,0" VerticalAlignment="Top" FontSize="14"/>
+                    <TextBox x:Name="UIDusefulBox" HorizontalAlignment="Left" Height="26" Margin="227,329,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label16" Content="Location:" HorizontalAlignment="Left" Height="50" Margin="7,360,0,0" VerticalAlignment="Top" Width="137" FontSize="14"/>
+                    <Label x:Name="label17" Content="Latitude:" HorizontalAlignment="Left" Height="44" Margin="7,390,0,0" VerticalAlignment="Top" Width="120" FontSize="14"/>
+                    <TextBox x:Name="UIDlatBox" HorizontalAlignment="Left" Height="20" Margin="87,396,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label18" Content="Longitude:" HorizontalAlignment="Left" Height="41" Margin="7,415,0,0" VerticalAlignment="Top" Width="128" FontSize="14"/>
+                    <TextBox x:Name="UIDlongBox" HorizontalAlignment="Left" Height="20" Margin="87,421,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" FontSize="14" IsReadOnly="True" Background="#e1e4ed"/>
+                    <Label x:Name="label19" Content="Friends" HorizontalAlignment="Left" Height="26" Margin="286,10,0,0" VerticalAlignment="Top" Width="128" FontSize="14"/>
+                    <DataGrid x:Name="FriendGrid" HorizontalAlignment="Left" Height="418" Margin="286,38,0,0" VerticalAlignment="Top" Width="356"/>
+                    <Label x:Name="label20" Content="Favorite Businesses" HorizontalAlignment="Left" Height="40" Margin="7,460,0,0" VerticalAlignment="Top" Width="146" FontSize="14"/>
+                    <DataGrid x:Name="FavoriteGrid" HorizontalAlignment="Left" Height="232" Margin="7,500,0,0" VerticalAlignment="Top" Width="635"/>
+                    <Label x:Name="label21" Content="What are my friends reviewing?" HorizontalAlignment="Left" Height="42" Margin="663,10,0,0" VerticalAlignment="Top" Width="226" FontSize="14"/>
+                    <DataGrid x:Name="LatestGrid" HorizontalAlignment="Left" Height="694" Margin="663,38,0,0" VerticalAlignment="Top" Width="515"/>
+                    <Button x:Name="editbutton" Content="Edit" HorizontalAlignment="Left" Height="22" Margin="207,394,0,0" VerticalAlignment="Top" Width="74" FontSize="12" Click="editbutton_Click"/>
+                    <Button x:Name="updatebutton" Content="Update" HorizontalAlignment="Left" Height="20" Margin="207,421,0,0" VerticalAlignment="Top" Width="74" FontSize="12" Click="updatebutton_Click"/>
+                    <Button x:Name="RemoveButton" Content="Remove From Favorites" HorizontalAlignment="Left" Height="26" Margin="478,462,0,0" VerticalAlignment="Top" Width="144" Click="RemoveButton_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Business Search">
+                <Grid>
+                    <ComboBox x:Name="statelist" HorizontalAlignment="Left" Height="59" Margin="40,46,0,0" VerticalAlignment="Top" Width="199" FontSize="14" SelectionChanged="statelist_SelectionChanged"/>
+                    <Label x:Name="label" Content="States" HorizontalAlignment="Left" Height="66" Margin="40,10,0,0" VerticalAlignment="Top" Width="122" FontSize="14" RenderTransformOrigin="0.552,0.166"/>
+                    <DataGrid x:Name="businessGrid" HorizontalAlignment="Left" Height="258" Margin="280,46,0,0" VerticalAlignment="Top" Width="871" SelectionChanged="businessGrid_SelectionChanged"/>
+                    <ComboBox x:Name="citylist" HorizontalAlignment="Left" Height="50" Margin="40,154,0,0" VerticalAlignment="Top" Width="199" FontSize="14" SelectionChanged="citylist_SelectionChanged"/>
+                    <Label x:Name="label1" Content="Cities" HorizontalAlignment="Left" Height="67" Margin="40,110,0,0" VerticalAlignment="Top" Width="175" FontSize="14"/>
+                    <Label x:Name="label2" Content="ZipCode" HorizontalAlignment="Left" Height="71" Margin="40,209,0,0" VerticalAlignment="Top" Width="122" FontSize="14"/>
+                    <ComboBox x:Name="ziplist" HorizontalAlignment="Left" Height="52" Margin="40,252,0,0" VerticalAlignment="Top" Width="199" SelectionChanged="ziplist_SelectionChanged"/>
+                    <Label x:Name="label3" Content="Categories" HorizontalAlignment="Left" Height="76" Margin="40,309,0,0" VerticalAlignment="Top" Width="142" FontSize="14"/>
+                    <ListBox x:Name="catlist" HorizontalAlignment="Left" Height="380" Margin="40,345,0,0" VerticalAlignment="Top" Width="199" SelectionMode="Multiple" SelectionChanged="catlist_SelectionChanged"/>
+                    <Label x:Name="label4" Content="Friends who reviewed this business" HorizontalAlignment="Left" Height="39" Margin="280,573,0,0" VerticalAlignment="Top" Width="246" FontSize="14"/>
+                    <DataGrid x:Name="reviewlist" HorizontalAlignment="Left" Height="116" Margin="280,609,0,0" VerticalAlignment="Top" Width="871" Background="#f2ffff"/>
+                    <TextBox x:Name="commentbox" HorizontalAlignment="Left" Height="99" Margin="280,469,0,0" TextWrapping="Wrap" Text="Leave A Review" VerticalAlignment="Top" Width="523"/>
+                    <TextBox x:Name="ratingbox" HorizontalAlignment="Left" Height="18" Margin="821,469,0,0" TextWrapping="Wrap" Text="Rate 1-5" VerticalAlignment="Top" Width="62"/>
+                    <Button x:Name="submit" Content="Submit" HorizontalAlignment="Left" Height="18" Margin="821,517,0,0" VerticalAlignment="Top" Width="75" Click="submit_Click"/>
+                    <TextBox x:Name="dow" HorizontalAlignment="Left" Height="90" Margin="957,339,0,0" TextWrapping="Wrap" Text="Today: Opens / Closes" VerticalAlignment="Top" Width="194" IsReadOnly="True" Background="#cacfde"/>
+                    <Label x:Name="label5" Content="Selected Business" HorizontalAlignment="Left" Margin="244,339,0,0" VerticalAlignment="Top" Height="45" Width="183" FontSize="14"/>
+                    <TextBox x:Name="SelectedBusiness" HorizontalAlignment="Left" Height="37" Margin="280,372,0,0" TextWrapping="Wrap" Text="Business Name" VerticalAlignment="Top" Width="426" FontSize="14" FontWeight="Bold" IsReadOnly="True" Background="#d0d9db"/>
+                    <TextBox x:Name="SelectedAddress" HorizontalAlignment="Left" Height="37" Margin="280,414,0,0" TextWrapping="Wrap" Text="Address" VerticalAlignment="Top" Width="426" FontSize="14" IsReadOnly="True" Background="#d0d9db"/>
+                    <TextBox x:Name="CatDisplay" HorizontalAlignment="Left" Height="90" Margin="731,339,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="199" FontSize="14" IsReadOnly="True" Background="#cadce0"/>
+                    <Button x:Name="Checkinbutton" Margin="957,440,140,222.6" Click="Checkinbutton_Click">
+                        <StackPanel>
+                            <Image Source="checkin.png" Height="52" Width="62"/>
+                            <TextBlock Height="18" Width="70" FontSize="14"><Run Text="Check-In"/></TextBlock>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="ShowCheckinbutton" Margin="1060,440,37,222.6" Click="ShowCheckinbutton_Click"/>
+                    <StackPanel>
+                        <Image Source="showcheckins.png" Height="59" Margin="1000,445,-23,0"/>
+                        <TextBlock Height="28" FontSize="12" Margin="1064,0,38,0"><Run Text="Show Checkins"/></TextBlock>
+                    </StackPanel>
+                    <Button x:Name="AddFavesbutton" Margin="957,525,140,137.6" Click="AddFavesbutton_Click"/>
+                    <StackPanel>
+                        <Image Source="favorite.jpg" Height="60" Margin="958,525,142,0"/>
+                        <TextBlock Height="28" FontSize="12" Margin="958,0,38,0"><Run Text="Add to Favorites"/></TextBlock>
+                    </StackPanel>
+                    <Button x:Name="ShowReviewsbutton" Margin="1060,525,37,137.6" Click="ShowReviewsbutton_Click"/>
+                    <StackPanel>
+                        <Image Source="showreview.png" Height="60" Margin="1000,525,-25,0"/>
+                        <TextBlock Height="28" FontSize="14" Margin="1063,0,0,0"><Run Text="Show Reviews"/></TextBlock>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

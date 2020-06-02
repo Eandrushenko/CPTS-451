@@ -1,0 +1,10 @@
+INSERT INTO Teams(teamName,teamCode,city) VALUES ('Cleveland Cavaliers','CLE','Cleveland'),
+                                                 ('Portland Trailblazers','POR','Portland'),                                               
+                                                 ('Los Angeles Lakers','LAL','Los Angeles'),                                               
+                                                 ('San Antonio Spurs','SAS','San Antonio'),                                               
+                                                 ('Miami Heat','MIA','Miami'),                                               
+                                                 ('Orlando Magic','ORL','Orlando'),                                               
+                                                 ('Los Angeles Clippers','LAC','Los Angeles'),                                               
+                                                 ('Denver Nuggets','DEN','Denver'),                                               
+                                                 ('Chicago Bulls','CHI','Chicago'),                                               
+                                                 ('Phoenix Suns','PHX','Pheonix');
